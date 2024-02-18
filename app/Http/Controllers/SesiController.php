@@ -70,10 +70,7 @@ class SesiController extends Controller
             'role' => 'user', // Default role saat registrasi
         ]);
 
-        // Login pengguna setelah registrasi
-        Auth::login($user);
-
         // Redirect atau berikan respons sesuai kebutuhan aplikasi Anda
-        return redirect()->route('home');
+        return redirect()->route('login');
     }
 }
