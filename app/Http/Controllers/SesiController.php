@@ -74,6 +74,6 @@ class SesiController extends Controller
         Auth::login($user);
 
         // Redirect atau berikan respons sesuai kebutuhan aplikasi Anda
-        return redirect()->route('login');
+        return redirect()->route('home');
     }
 }
