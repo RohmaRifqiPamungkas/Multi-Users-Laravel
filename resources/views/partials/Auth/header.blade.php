@@ -33,4 +33,4 @@
     <link id="pagestyle" href="{{ asset('template/assets/css/argon-dashboard.css?v=2.0.4') }}" rel="stylesheet" />
 </head>
 
-<body class="">
+<body class="g-sidenav-show bg-gray-100">
