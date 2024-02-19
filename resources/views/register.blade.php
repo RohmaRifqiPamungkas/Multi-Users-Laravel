@@ -155,6 +155,10 @@
                                 <input type="password" name="password" class="form-control" placeholder="Password"
                                     aria-label="Password">
                             </div>
+                            <div class="mb-3">
+                                <input type="password" name="password_confirmation" class="form-control"
+                                    placeholder="Confirm Password" aria-label="Password">
+                            </div>
                             <div class="form-check form-check-info text-start">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
                                     checked>
