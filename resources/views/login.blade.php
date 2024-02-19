@@ -36,13 +36,11 @@
                                         <label class="form-check-label" for="rememberMe">Remember me</label>
                                     </div>
                                     <div class="text-center">
-                                        <button type="button" name="submit"
-                                            class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">Sign in</button>
+                                        <button name="submit" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">Sign in</button>
                                     </div>
                                     <div class="text-center">
-                                        <a href="{{ route('login.google') }}" type="button"
-                                            class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">Login with
-                                            Google</a>
+                                        <a href="{{ route('login.google') }}" 
+                                            class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">Login with Google </a>
                                     </div>
                                 </form>
                             </div>
