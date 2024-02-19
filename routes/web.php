@@ -19,19 +19,22 @@ Route::middleware(['guest'])->group(function () {
     Route::get('/', [SesiController::class, 'index'])->name('login');
     Route::post('/', [SesiController::class, 'login']);
 
-    // Tambahkan rute registrasi
     Route::get('/register', [SesiController::class, 'registerView'])->name('register');
     Route::post('/register', [SesiController::class, 'register']);
-});
 
-Route::get('/home', function () {
-    return redirect('/admin');
+    Route::get('/login/google', [SesiController::class, 'redirectToGoogle'])->name('login.google');
+    Route::get('/google/callback', [SesiController::class, 'handleGoogleCallback'])->name('login.google.callback');
 });
 
 Route::middleware(['auth'])->group(function () {
+    Route::get('/home', [AdminController::class, 'index'])->name('home.landing');
     Route::get('/admin', [AdminController::class, 'index']);
     Route::get('/admin/user', [AdminController::class, 'user'])->middleware('userAkses:user');
     Route::get('/admin/admin', [AdminController::class, 'admin'])->middleware('userAkses:admin');
     Route::get('/admin/operator', [AdminController::class, 'operator'])->middleware('userAkses:operator');
     Route::get('/logout', [SesiController::class, 'logout']);
+});
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/admin', [AdminController::class, 'admin'])->middleware('userAkses:admin')->name('admin');
 });
