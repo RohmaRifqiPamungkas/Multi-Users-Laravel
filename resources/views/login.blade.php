@@ -39,7 +39,7 @@
             <!-- Tambahkan tautan ke halaman registrasi -->
             <div class="text-center">
                 <p>Belum punya akun? <a href="{{ route('register') }}">Daftar sekarang</a></p>
-                <p>Login/Register with Google <a href="{{ route('login.google') }}" class="btn btn-google"></a></p>
+                <p>Login/Register with google <a href="{{ route('login.google') }}" class="btn btn-google"></a></p>
             </div>
         </div> 
     </div>
