@@ -50,8 +50,7 @@
                                 <p class="mb-4 text-sm mx-auto">
                                     Don't have an account?
                                     <a href="{{ route('register') }}"
-                                        class="text-primary text-gradient font-weight-bold">Sign
-                                        up</a>
+                                        class="text-primary text-gradient font-weight-bold">Sign up</a>
                                 </p>
                             </div>
                         </div>

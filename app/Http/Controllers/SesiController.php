@@ -26,7 +26,7 @@ class SesiController extends Controller
 
         Auth::login($user);
 
-        return redirect()->route('home.landing');
+        return redirect()->route('admin');
     }
 
     public function redirectToGoogle()
